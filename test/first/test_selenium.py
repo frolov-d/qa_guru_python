@@ -1,6 +1,7 @@
 import pytest
 from selenium import webdriver
 
+
 @pytest.mark.selenium
 def test_selenium():
     driver = webdriver.Chrome()
