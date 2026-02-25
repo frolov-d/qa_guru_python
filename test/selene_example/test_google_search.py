@@ -29,6 +29,7 @@ def test_google_search_selenium(driver):
     assert expected_text == h3_element.text
 
 def test_google_search_selene():
+    # browser.config.driver.name = "firefox"
     browser.open("https://www.google.com/")
 
     browser.element("[name=q]").type("selene github").press_enter()
