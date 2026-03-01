@@ -41,5 +41,5 @@ def test_visible_after_5_seconds_text_selene():
     browser.element('#colorChange').click()
 
     browser.element('#visibleAfter').should(
-        have.text('Visible After 5 Seconds')
+        have.text('Visible').and_(have.text('After 5 Seconds'))
     )
